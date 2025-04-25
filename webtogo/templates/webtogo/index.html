@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Johnny Alimoot C.">
+    
+    <!-- MOTS-CLÉS DE LA PAGE POUR AIDER LE MOTEUR DE RECHERCHE-->
+    <meta name="keywords" content="HTML, CSS, Blue, Rounded, Modern, Nice">
+ 
+    <!-- L'IMAGE OG EST CELLE QUI APPARAÎT LORS DU PARTAGE DE VOTRE SITE SUR LES RÉSEAUX SOCIAUX -->
+    <meta property="og:image" content="art/og-card.png">     <!-- A modifier après-->
+    <meta property="og:title" content="Roundazzle - Free corporate web template">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- THE TITLE OF THE PAGE -->
+    {% load static %}
+    <title>WebGnigban | Accueil</title>
+
+    <link rel="preload" href="{% static 'webtogo/icons/bootstrap-icons.css' %}" as="style">
+    <link rel="preload" href="{% static 'webtogo/css/fontstyle.css' %}" as="style">
+    <link rel="preload" href="{% static 'webtogo/css/layout.css' %}" as="style">
+    <link rel="preload" href="{% static 'webtogo/css/animation.css' %}" as="style">
+    <link rel="preload" href="{% static 'webtogo/css/style.css' %}" as="style">
+
+    <link rel="stylesheet" href="{% static 'webtogo/icons/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'webtogo/css/fontstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'webtogo/css/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'webtogo/css/animation.css' %}"> 
+    <link rel="stylesheet" href="{% static 'webtogo/css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'webtogo/art/favicon.png' %}">
+</head>
+<body>
+    <!-- FADE OUT ANIMATION WHEN LOADED -->
+    <span class="fade"></span>
+    <main>
+        <!-- MAIN HERO BANNER START -->
+        <section class="hero-banner">
+            <div class="hero-contained">
+                <div class="hero-title fc-white">
+                    <h1 class="ff-damion">WebGnigban</h1>
+                    <p class="fs-h4 fw-normal">
+                        Vous avez une idée ? On s’occupe de la rendre réelle. Sites web, applis, logos, visuels… on crée tout ce qu’il faut pour vous faire avancer. Et si le budget bloque, on s’adapte. Ce qui compte pour nous, c’est votre projet. Parlons-en.                    </p>
+                    <a href="#about" class="btn-bg2 border-round mt-20">
+                        En savoir plus <i class="bi bi-chevron-compact-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-socials">
+                <a href="#" class="mt-a icon-link" aria-label="Follow us on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="icon-link mt-10" aria-label="Follow us on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="icon-link mt-10" aria-label="Follow us on twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="icon-link mt-10" aria-label="Follow us on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </section>
+        <!-- MAIN HERO BANNER END -->
+
+        <!-- NAVIGATION START -->
+        <nav>
+            <div class="contained">
+                <a href="{% url 'webtogo:index' %}" class="logo fc-primary ff-damion row flex-alig-center">
+                    <span class="fs-h2">WebGnigban</span>
+                </a>
+                <input type="checkbox" name="tablet-mobile-menu" class="tab-mob-menu" aria-label="tablet and mobile menu">
+                <div class="navigation-container">
+                    <a href="{% url 'webtogo:index'%}">Acceuil</a>
+                    <a href="{% url 'webtogo:about'%}">A Propos</a>
+                    <a href="{% url 'webtogo:service'%}">Services</a>
+                    <!--<a href="{% url 'webtogo:industries'%}">Industries</a>
+                    <a href="blog/blog.html">Blog</a>
+                    <a href="career/career.html">Career</a>-->
+                    <a href="{% url 'webtogo:contact' %}" class="btn-bg1 border-round">Contactez-nous</a>
+                </div>
+            </div>
+        </nav>
+        <a href="#" class="btn-back-to-top" aria-label="Back to top button">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+        <!-- NAVIGATION END -->
+
+        <!-- ABOUT SECTION START -->
+        <section class="contained row" id="about">
+            <h2 class="section-title ff-damion">A propos</h2>
+            <div class="col-balance">
+                <span class="fc-primary fs-h2">
+                    WebGnigban – Votre partenaire digital, pour des solutions web fiables, esthétiques et accessibles.                
+                </span>
+                <p>
+                    WebGnigban accompagne les entreprises, indépendants et structures locales dans leur transformation numérique en concevant des plateformes web à la fois intuitives, performantes et conçues pour durer. Chaque réalisation est pensée pour refléter fidèlement votre identité, tout en garantissant une expérience fluide et efficace pour vos visiteurs.               
+                 </p>
+                <p>
+                    Nous croyons qu’un site Internet ne devrait pas être un luxe. C’est pourquoi nous proposons des offres claires, au prix juste, sans frais cachés, qui permettent à chacun de bénéficier d’un outil de communication solide et valorisant.                
+                </p>
+                <p>
+                    Notre équipe, composée de différents profils complémentaires, met un point d’honneur à créer des interfaces soignées, compatibles avec tous les supports et respectueuses des dernières évolutions techniques.               
+                </p>
+                <p>
+                    Nous ne nous contentons pas de livrer un site : nous bâtissons un outil sur lequel vous pouvez compter, un espace qui vous ressemble, et qui parle à votre public.
+                    <br> <br>Qu’il s’agisse d’un premier pas en ligne ou d’une refonte complète, nous sommes là pour vous guider, vous conseiller, et faire de votre projet une réussite concrète, mesurable et professionnelle.
+                </p>
+
+                <a href="about.html" class="btn-bg1 mt-25 border-round">En Savoir Plus</a>
+            </div>
+            <div class="col-balance">
+                <div class="sticky-img-dual">
+                    <img src="{% static 'webtogo/art/hero1.webp' %}" alt="">
+                    <img src="{% static 'webtogo/svg/blob.svg' %}" alt="" class="blob">
+                    <img src="{% static 'webtogo/art/hero2.webp' %}" alt="">
+                </div>
+            </div>
+            <div class="sticky-img-dual-spacer"></div>
+        </section>
+        <!-- ABOUT SECTION END -->
+
+        <!-- TEAM SECTION START 
+        <section class="contained">
+            <h2 class="section-title ff-damion">Our team</h2>
+            <p class="col-wide mlmr-a ta-center">
+                Our team composes of highly competitive cloned
+                individual with the same name too, they are top notch motivaded individual
+                dedicated to give hundred and ten percent effort to make your vision comes to life.
+            </p>
+            <div class="row flex-just-center">
+                <div class="col-tri">
+                    <article class="card-team">
+                        <img src="{% static 'webtogo/art/team.webp' %}" alt="">
+                        <h3 class="title ff-damion">Johnny Doe</h3>
+                        <div class="info">
+                            <h3 class="ff-damion">Frontend Developer</h3>
+                            <p>
+                                When I gaze upon the stars' gentle embrace, I glimpse a universe of 
+                                dreams slipping into space, but dreamers must awaken to a stark and empty place.
+                            </p>
+                            <p>
+                                Whispering in the language of forgotten dreams, I hear the echoes of 
+                                desires lost in silent streams.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-tri">
+                    <article class="card-team">
+                        <img src="art/team.webp" alt="">
+                        <h3 class="title ff-damion">Johnny Doe</h3>
+                        <div class="info">
+                            <h3 class="ff-damion">Frontend Developer</h3>
+                            <p>
+                                When I gaze upon the stars' gentle embrace, I glimpse a universe of 
+                                dreams slipping into space, but dreamers must awaken to a stark and empty place.
+                            </p>
+                            <p>
+                                Whispering in the language of forgotten dreams, I hear the echoes of 
+                                desires lost in silent streams.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-tri">
+                    <article class="card-team">
+                        <img src="art/team.webp" alt="">
+                        <h3 class="title ff-damion">Johnny Doe</h3>
+                        <div class="info">
+                            <h3 class="ff-damion">Frontend Developer</h3>
+                            <p>
+                                When I gaze upon the stars' gentle embrace, I glimpse a universe of 
+                                dreams slipping into space, but dreamers must awaken to a stark and empty place.
+                            </p>
+                            <p>
+                                Whispering in the language of forgotten dreams, I hear the echoes of 
+                                desires lost in silent streams.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <br>
+        </section>-->
+        <!-- TEAM SECTION END -->
+
+        <!-- PREVIEW SERVICE SECTION START -->
+        <section class="bg-primary-foot ta-center">
+            <h2 class="section-title ff-damion bg-primary-foot">Services</h2>
+            <div class="contained">
+                <p class="col-wide mlmr-a">
+                    Chez WebGnigban, on propose bien plus que la création de sites. Voici un aperçu des solutions que nous mettons à votre disposition
+                </p>
+            </div>
+            <div class="contained row flex-just-center">
+                <div class="col-full">
+                    <hr>
+                </div>
+                <div class="col-tri">
+                    <i class="bi bi-code-slash fs-h2"></i>
+                    <h3 class="mt-10 ">Création de sites vitrine</h3>
+                    <p>
+                        Un site simple, clair et élégant pour présenter votre activité, vos services et vous rendre visible en ligne. 
+                        Idéal pour les entrepreneurs, artisans, freelances, associations…
+                    </p>
+                </div>
+                <div class="col-tri">
+                    <i class="bi bi-diagram-3 fs-h2"></i>
+                    <h3 class="mt-10 ">Conception d’applications mobiles</h3>
+                    <p>
+                        On développe des applications performantes pour Android et iOS, pensées pour offrir une expérience utilisateur fluide et adaptée à vos besoins.
+                    </p>
+                </div>
+                <div class="col-tri">
+                    <i class="bi bi-stars fs-h2"></i>
+                    <h3 class="mt-10 ">Création de logos</h3>
+                    <p>
+                        Un logo unique, des couleurs harmonieuses, une charte graphique cohérente : tout ce qu’il faut pour affirmer votre image de marque.
+                    </p>
+                </div>
+            </div>
+            <a href="{% url 'webtogo:service'%}" class="btn-bg2 border-round mt-25">
+                Voir nos services
+            </a>
+        </section>
+        <!-- PREVIEW SERVICE SECTION END -->
+
+        <!-- PREVIEW BLOGS SECTION START 
+        <section class="contained">
+            <h2 class="section-title ff-damion">Blogs</h2>
+            <p class="ta-center col-wide mlmr-a">
+                Stay informed about our blogs, it's highly unlikely that they will stay up to date. 
+                This will be the latest blog from 2023 when it's already 2026, feel free to read our 
+                outdated blogs.
+            </p>
+            <div class="row flex-just-center">
+                <div class="col-tri">
+                    <article class="card-blog">
+                        <img src="art/work1.webp" alt="">
+                        <div class="info">
+                            <h3 class="mt-5 mb-5 ff-damion fc-primary">Duckonomics</h3>
+                            <p class="ml-a mt-5">09/26/2023</p>
+                        </div>
+                        <p class="ml-10 mt-5 mb-20">
+                            Duckonomics Meets Quackonomics.
+                        </p>
+                        <a href="blog/blog-1.html" class="ml-10">
+                            Read blog <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-tri">
+                    <article class="card-blog">
+                        <img src="art/work2.webp" alt="">
+                        <div class="info">
+                            <h3 class="mt-5 mb-5 ff-damion fc-primary">Quackonomics</h3>
+                            <p class="ml-a mt-5">09/26/2023</p>
+                        </div>
+                        <p class="ml-10 mt-5 mb-20">
+                            A Duck's Guide to Financial Success.
+                        </p>
+                        <a href="blog/blog-1.html" class="ml-10">
+                            Read blog <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-tri">
+                    <article class="card-blog">
+                        <img src="art/work3.webp" alt="">
+                        <div class="info">
+                            <h3 class="mt-5 mb-5 ff-damion fc-primary">Galactic Gastronomy</h3>
+                            <p class="ml-a mt-5">09/26/2023</p>
+                        </div>
+                        <p class="ml-10 mt-5 mb-20">
+                            Toasting with the Stars.
+                        </p>
+                        <a href="blog/blog-1.html" class="ml-10">
+                            Read blog <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section> -->
+        <!-- PREVIEW BLOGS SECTION END -->
+
+        <!-- SUBSCRIBE TO NEWS LETTERS START -->
+        <section class="subscribe bg-primary-foot" style="background-image: url('art/overlay.webp');">
+            <div class="contained row ta-center">
+                <div class="col-balance fc-white">
+                    <h3 class="mb-a  mt-a">Ne manquez pas nos actualités – abonnez-vous :</h3>
+                </div>
+                <div class="col-balance">
+                    <form action="#">
+                        <input type="email" id="subscribe-email" aria-label="Subscribe to our email news" placeholder="Email" required>
+                        <button class="btn-bg2">Je m'abonne</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- SUBSCRIBE TO NEWS LETTERS ENS -->
+
+        <section class="contained ta-center">
+            <h2 class="section-title ">Infos</h2>
+            <p class="col-wide mlmr-a">
+                Vous connaissez une entreprise ou une personne qui a besoin d’un site web, d’une application ou d’une solution digitale ? 
+                Parrainez-nous un client et touchez de 15 000 FCFA à 25 000 FCFA dès que le projet est validé !
+            </p>
+            <a href="contact.html" class="btn-bg1 border-round mt-25">
+                Comment ça marche ??
+            </a>
+        </section>
+
+    </main>
+    
+    <!-- FOOTER START -->
+    <footer class="fc-white">
+        <div class="contained row flex-just-center">
+
+            <!-- FOOTER WEBSITE MOTO START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">WebGnigban</h3>
+                <p>
+                    Former une nouvelle génération de talents tech africains et 
+                    connecter leurs compétences aux besoins réels des entreprises, pour construire ensemble l'avenir numérique du continent.
+                </p>
+                <p>
+                    Bâtir l'Afrique de demain, une ligne de code à la fois.
+                </p>
+            </div>
+            <!-- FOOTER WEBSITE MOTO END -->
+
+            <!-- FOOTER QUICK CONTACT START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Contactez-nous</h3>
+                <a href="#" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-envelope-fill"></i>
+                    nonexistentadd@gmail.com
+                </a>
+                <a href="#" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-telephone-fill"></i>
+                    +22897650660
+                </a>
+                <a href="#" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    100% en ligne
+                </a>
+                <a href="#" class="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <!-- FOOTER QUICK CONTACT END -->
+            
+            <!-- FOOTER SCHEDULE START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Horaires d'ouverture</h3>
+                <p class="mt-10 mb-10 fw-bold">
+                    Lundi - Vendredi:
+                    <span class="fw-normal display-block">7:00 - 20:00</span>
+                </p>
+                <p class="mt-10 mb-10 fw-bold">
+                    Samedi:
+                    <span class="fw-normal display-block">7:00 - 17:00</span>
+                </p>
+                <p class="mt-10 mb-10 fw-bold">
+                    Dimanche:
+                    <span class="fw-normal display-block">Fermé</span>
+                </p>
+            </div>
+            <!-- FOOTER SCHEDULE END -->
+            
+            <!-- FOOTER USEFUL LINKS START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Liens utiles</h3>
+                <a href="index.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Accueil
+                </a>
+                <a href="about.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    A propos
+                </a>
+                <a href="service.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Services
+                </a>
+                
+                <!--<a href="industries.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Industries
+                </a>
+                <a href="blog/blog.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Blog
+                </a>
+                <a href="career/career.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Career
+                </a> -->
+                <a href="contact.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Contact
+                </a>
+                <a href="#" class="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <!-- FOOTER USEFUL LINKS END -->
+            
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+</body>
+</html>
